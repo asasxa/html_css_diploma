@@ -113,3 +113,96 @@
   top: 816.744px;
   z-index: 386;
 }
+
+.search-button img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+.search-button {
+  transition: color 0.3s ease;
+}
+
+
+.search-section {
+  padding: 40px;
+  text-align: center;
+}
+
+.search {
+  display: inline-flex;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+  background-color: rgb(244, 247, 246);
+  overflow: hidden;
+  position: relative;
+}
+
+.search-group {
+  flex-grow: 1;
+}
+
+.button {
+  background-color: rgb(181, 159, 91);
+  border: none;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  padding: 0 16px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 5px 12px;
+  margin: 0 10px 10px 0;
+  border: 2px solid red;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.tag:hover {
+  background-color: blue;
+  color: green;
+}
+
+/* Основной контейнер */
+.themes-section {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Заголовок */
+.section-title {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Список тем */
+.themes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Элемент темы */
+.theme-item {
+  position: relative;
+  padding: 10px 20px;
+  font-size: 34px;
+  color: black;
+  cursor: pointer;
+}
+
+/* Счетчик тем */
+.theme-count {
+  color: rgb(181, 159, 91);
+  padding: 4px 10px;
+  font-size: 20px;
+  min-width: 24px;
+}
