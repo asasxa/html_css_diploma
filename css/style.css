@@ -1,6 +1,6 @@
 /* Шапка */
 .header {
-  background-image: url('../img/banner-bg.jpg'); /* Фоновое изображение */
+  background-image: url("../img/banner-bg.jpg"); /* Фоновое изображение */
   background-size: cover; /* Растягивает изображение на весь блок */
   background-position: center; /* Центрирует изображение */
   padding: 33px 20px; /* Отступы сверху и снизу / слева и справа */
@@ -39,7 +39,8 @@
 
 .intro {
   position: absolute; /* Позиционирование поверх фона */
-  top: 50%; left: 50%; /* Центрирование */
+  top: 50%;
+  left: 50%; /* Центрирование */
   transform: translate(-50%, -50%); /* Точное центрирование */
   text-align: center; /* Текст по центру */
   font-size: 75px; /* Размер заголовка */
@@ -50,14 +51,12 @@
   z-index: 2; /* Поверх фона */
 }
 
-
 /* Тренды */
 
 .trends {
   padding: 60px 20px; /* Отступы вокруг блока */
   display: flex;
   flex-wrap: wrap;
-  grid-template-columns: repeat(4, 1fr); /* 4 колонки одинаковой ширины */
   gap: 5px; /* Промежутки между карточками */
 }
 
@@ -74,9 +73,10 @@
 }
 
 .trends-title::after {
-  content: ''; /* Создаёт линию под заголовком */
+  content: ""; /* Создаёт линию под заголовком */
   position: absolute; /* Позиционирование */
-  bottom: -10px; left: 50%; /* Положение относительно заголовка */
+  bottom: -10px;
+  left: 50%; /* Положение относительно заголовка */
   transform: translateX(-50%); /* Центрирование линии */
   width: 100px; /* Длина линии */
   height: 5px; /* Толщина линии */
@@ -96,7 +96,9 @@
 
 .trend-item-content {
   position: absolute; /* Позиционирование поверх картинки */
-  bottom: 0; left: 0; right: 0; /* Прижато к нижнему краю */
+  bottom: 0;
+  left: 0;
+  right: 0; /* Прижато к нижнему краю */
   padding: 40px; /* Внутренний отступ */
   border: 5px solid orange;
 }
@@ -220,16 +222,10 @@
   display: inline-block;
   padding: 5px 12px;
   margin: 0 10px 10px 0;
-  border: 2px solid red;
   color: black;
   text-decoration: none;
   font-size: 14px;
   transition: all 0.3s ease;
-}
-
-.tag:hover {
-  background-color: blue;
-  color: green;
 }
 
 /* Основной контейнер */
@@ -267,6 +263,7 @@
   color: rgb(181, 159, 91);
   padding: 4px 10px;
   font-size: 20px;
+  margin-left: 5px;
   min-width: 24px;
 }
 
@@ -334,3 +331,121 @@
   border-radius: 4px; /* Скруглённые углы */
   transition: background-color 0.3s ease; /* Анимация при наведении */
 }
+
+/* ================== Подвал ================== */
+
+.footer {
+  background-color: #f0f0f0;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.social img {
+  width: 24px;
+  height: 24px;
+  margin: 0 10px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.social img:hover {
+  filter: grayscale(0);
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #999;
+}
+
+/* ================== Поиск и подписка ================== */
+
+.search {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.search-button {
+  background-color: #d4af37;
+  color: #fff;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-submit {
+  background-color: #d4af37;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.field-label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* ================== Боковая панель ================== */
+
+.sidebar {
+  margin-top: 40px;
+}
+
+.last-post h4,
+.search-section h4,
+.tag,
+.themes-list h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.last-post h4::after,
+.search-section h4::after,
+.tag::after,
+.themes-list h4::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #d4af37;
+}
+
+.last-post img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.tag a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #333;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.tag a:hover {
+  background-color: #f0f0f0;
+}
+
+.theme-item {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+
