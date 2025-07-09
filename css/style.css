@@ -1,81 +1,121 @@
+/* Шапка */
 .header {
-  background-image: url('../img/banner-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  padding: 33px 246px;
-  position: relative;
-  min-height: 446px;
-  z-index: -1;
+  background-image: url('../img/banner-bg.jpg'); /* Фоновое изображение */
+  background-size: cover; /* Растягивает изображение на весь блок */
+  background-position: center; /* Центрирует изображение */
+  padding: 33px 20px; /* Отступы сверху и снизу / слева и справа */
+  position: relative; /* Позволяет позиционировать дочерние элементы */
+  min-height: 446px; /* Минимальная высота блока */
+  z-index: 1; /* Позиционирует над другими элементами */
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header .container {
+  display: flex; /* Располагает логотип и меню в строку */
+  justify-content: space-between; /* Раздвигает элементы по краям */
+  align-items: center; /* Выравнивает по вертикали */
 }
 
 .header-logo {
-  width: 179px;
-  height: 41px;
+  width: 179px; /* Ширина логотипа */
+  height: 41px; /* Высота логотипа */
 }
 
 .menu-list {
-  display: flex;
-  list-style: none;
-  gap: 50px;
+  display: flex; /* Располагает пункты меню в строку */
+  list-style: none; /* Убирает точки */
+  gap: 50px; /* Промежуток между пунктами меню */
 }
 
 .menu-link {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  transition: opacity 0.3s ease;
+  text-decoration: none; /* Убирает подчеркивание */
+  color: #fff; /* Цвет текста меню */
+  font-weight: bold; /* Жирный шрифт */
+  transition: opacity 0.3s ease; /* Анимация при наведении */
 }
 
 .menu-link:hover {
-  opacity: 0.7;
+  opacity: 0.7; /* Затемняет текст при наведении */
 }
 
 .intro {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 75px;
-  color: white;
-  width: 100%;
-  padding: 0 20px;
-  text-transform: uppercase;
+  position: absolute; /* Позиционирование поверх фона */
+  top: 50%; left: 50%; /* Центрирование */
+  transform: translate(-50%, -50%); /* Точное центрирование */
+  text-align: center; /* Текст по центру */
+  font-size: 75px; /* Размер заголовка */
+  color: white; /* Цвет текста */
+  width: 100%; /* На всю ширину */
+  padding: 0 20px; /* Отступы слева и справа */
+  text-transform: uppercase; /* Все буквы заглавные */
+  z-index: 2; /* Поверх фона */
 }
 
+
+/* Тренды */
+
 .trends {
+  padding: 60px 20px; /* Отступы вокруг блока */
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  padding: 60px 20px;
+  grid-template-columns: repeat(4, 1fr); /* 4 колонки одинаковой ширины */
+  gap: 5px; /* Промежутки между карточками */
 }
 
 .trends-title {
   top: 30px;
-  left: 50%;
-  font-size: 28px;
-  text-align: center;
+  bottom: 30px;
   width: 100%;
   z-index: 1;
+  text-align: center; /* Заголовок по центру */
+  font-size: 28px; /* Размер шрифта */
+  font-weight: bold; /* Жирный шрифт */
+  margin-bottom: 40px; /* Отступ снизу */
+  position: relative; /* Для псевдоэлемента */
+}
+
+.trends-title::after {
+  content: ''; /* Создаёт линию под заголовком */
+  position: absolute; /* Позиционирование */
+  bottom: -10px; left: 50%; /* Положение относительно заголовка */
+  transform: translateX(-50%); /* Центрирование линии */
+  width: 100px; /* Длина линии */
+  height: 5px; /* Толщина линии */
+  background-color: #b59f5b; /* Цвет линии */
 }
 
 .trend-preview {
-  position: relative;
-  overflow: hidden;
+  position: relative; /* Для абсолютного позиционирования контента */
+  overflow: hidden; /* Обрезает содержимое за пределами */
+}
+
+.trend-picture {
+  width: 100%; /* Картинка занимает всю ширину */
+  height: auto; /* Сохраняет пропорции */
+  background-color: rgba(0, 0, 0, 0.6); /* Полупрозрачный фон */
 }
 
 .trend-item-content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  border-top: 5px solid orange;
+  position: absolute; /* Позиционирование поверх картинки */
+  bottom: 0; left: 0; right: 0; /* Прижато к нижнему краю */
+  padding: 40px; /* Внутренний отступ */
+  border: 5px solid orange;
 }
+
+.trend-category {
+  font-size: 12px; /* Маленький шрифт */
+  text-transform: uppercase; /* Все буквы заглавные */
+  color: #b59f5b; /* Цвет текста */
+  display: block; /* Блочный элемент */
+  margin-bottom: 10px; /* Отступ снизу */
+}
+
+.trend-title {
+  font-size: 18px; /* Размер шрифта */
+  color: #fff; /* Цвет текста */
+  font-weight: bold; /* Жирный шрифт */
+}
+
+/* Основной контент */
 
 .content {
   padding: 60px 20px;
@@ -90,28 +130,52 @@
 }
 
 .news-wrapper {
-  flex: 3;
+  flex: 3; /* Занимает 3 части от общего пространства */
 }
 
 .sidebar {
-  flex: 1;
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-left: 1px solid #ddd;
+  flex: 1; /* Занимает 1 часть от общего пространства */
+  background-color: #f9f9f9; /* Цвет фона */
+  padding: 20px; /* Внутренние отступы */
+  border-left: 1px solid #ddd; /* Линия слева */
 }
 
-.trend-items {
-  font-size: 22.424px;
-  font-family: "OpenSans";
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1.2;
-  text-align: left;
-  position: absolute;
-  left: 59.176px;
-  top: 816.744px;
-  z-index: 386;
+.news {
+  margin-bottom: 40px; /* Отступ снизу между постами */
+  text-decoration: none;
+}
+
+.category-news {
+  display: block; /* Блочный элемент */
+  font-size: 12px; /* Маленький шрифт */
+  text-transform: uppercase; /* Все буквы заглавные */
+  color: #b59f5b; /* Цвет текста */
+  margin-bottom: 10px; /* Отступ снизу */
+}
+
+.title-news {
+  font-size: 24px; /* Размер шрифта */
+  margin-bottom: 10px; /* Отступ снизу */
+  color: #333; /* Цвет текста */
+}
+
+.time,
+.news-author {
+  font-size: 14px; /* Размер шрифта */
+  color: #999; /* Цвет текста */
+  display: inline-block; /* Показывает рядом */
+  margin-right: 10px; /* Отступ справа */
+}
+
+.news-picture {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.content-news {
+  font-size: 16px; /* Размер шрифта */
+  color: #666; /* Цвет текста */
+  line-height: 1.5; /* Межстрочный интервал */
 }
 
 .search-button img {
@@ -123,7 +187,6 @@
 .search-button {
   transition: color 0.3s ease;
 }
-
 
 .search-section {
   padding: 40px;
@@ -205,4 +268,69 @@
   padding: 4px 10px;
   font-size: 20px;
   min-width: 24px;
+}
+
+/* Изделия */
+
+.products {
+  padding: 60px 20px; /* Отступы */
+  background-color: #fafafa; /* Светло-серый фон */
+}
+
+.products h3 {
+  text-align: center; /* Центрирование заголовка */
+  font-size: 28px; /* Размер шрифта */
+  font-weight: bold; /* Жирный шрифт */
+  margin-bottom: 40px; /* Отступ снизу */
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+  gap: 30px; /* Промежутки между товарами */
+}
+
+.products-item {
+  background-color: #fff; /* Белый фон */
+  padding: 20px; /* Внутренние отступы */
+  text-align: center; /* Центрирование текста */
+}
+
+.title-products-item {
+  font-size: 20px; /* Размер шрифта */
+  margin-bottom: 15px; /* Отступ снизу */
+  color: #333; /* Цвет текста */
+}
+
+.content-products-item {
+  font-size: 14px; /* Размер шрифта */
+  color: #666; /* Цвет текста */
+  margin-bottom: 15px; /* Отступ снизу */
+}
+
+.product-footer {
+  display: flex; /* Цена и кнопка в строку */
+  justify-content: space-between; /* Раздвигает элементы */
+  align-items: center; /* Вертикальное выравнивание */
+  margin-top: 10px; /* Отступ сверху */
+}
+
+.product-price {
+  font-weight: bold; /* Жирный шрифт */
+  color: #333; /* Цвет текста */
+}
+
+.product-old-price {
+  text-decoration: line-through; /* Перечёркнутый текст */
+  color: #aaa; /* Светло-серый цвет */
+  margin-right: 10px; /* Отступ справа */
+}
+
+.product-button {
+  background-color: #b59f5b; /* Золотистый фон */
+  color: white; /* Белый текст */
+  padding: 10px 20px; /* Внутренние отступы */
+  border-radius: 4px; /* Скруглённые углы */
+  transition: background-color 0.3s ease; /* Анимация при наведении */
 }
