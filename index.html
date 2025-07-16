@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Блог Noémi</title>
   <link rel="stylesheet" href="css/normalize.css">
@@ -25,7 +25,7 @@
         </ul>
       </nav>
     </div>
-    <h1 class="intro"> БЛОГ О ТВОРЧЕСТВЕ, СПОРТЕ И ОБРАЗЕ ЖИЗНИ </h1>
+    <h1 class="intro">БЛОГ О ТВОРЧЕСТВЕ, СПОРТЕ И ОБРАЗЕ ЖИЗНИ</h1>
   </header>
 
   <!-- "Сейчас в тренде" -->
@@ -70,53 +70,53 @@
   </section>
 
   <!-- Основной контент -->
-  <div class="content">
+  <main class="content">
     <div class="container">
       <ol>
         <li>
-          <section class="news">
-            <span class="category-news">TRAVEL HEALTH</span>
+          <article class="news">
+            <img src="img/last-post1.jpg" class="news-picture" alt="Питер на рассвете">
+            <a href="#" class="category-news">TRAVEL HEALTH</a>
             <h3 class="title-news">10 МЕСТ, РАДИ КОТОРЫХ СТОИТ ПРОСНУТЬСЯ НА РАССВЕТЕ</h3>
             <time datetime="2019-06-10">Неизвестный автор</time>
-            <img src="img/last-post1.jpg" class="news-picture" alt="Питер на рассвете">
             <span class="content-news">Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города... Музеи еще закрыты. Что посмотреть?</span>
-          </section>
+          </article>
         </li>
         <li>
-          <section class="news">
-            <span class="category-news">HEALTH LIFESTYLE</span>
+          <article class="news">
+            <img src="img/last-post2.jpg" class="news-picture" alt="Йога в домашних условиях">
+            <a href="#" class="category-news">HEALTH LIFESTYLE</a>
             <h3 class="title-news">ЙОГА ДЛЯ НАЧИНАЮЩИХ В ДОМАШНИХ УСЛОВИЯХ</h3>
             <time datetime="2019-06-10">Неизвестный автор</time>
-            <img src="img/last-post2.jpg" class="news-picture" alt="Йога в домашних условиях">
             <span class="content-news">Расскажем, какие упражнения выбрать и как сделать коврик из того, что можно найти в шкафу.</span>
-          </section>
+          </article>
         </li>
         <li>
-          <section class="news">
-            <span class="category-news">MUSIC</span>
+          <article class="news">
+            <img src="img/last-post3.jpg" class="news-picture" alt="Фестиваль">
+            <a href="#" class="category-news">MUSIC</a>
             <h3 class="title-news">ЛУЧШИЕ МУЗЫКАЛЬНЫЕ ФЕСТИВАЛИ ЭТОГО ЛЕТА</h3>
             <time datetime="2019-06-10">Неизвестный автор</time>
-            <img src="img/last-post3.jpg" class="news-picture" alt="Фестиваль">
             <span class="content-news">Лето на носу, а с ним и музыкальные фестивали. На каком из них вы разобьете свою палатку? Мы составили список лучших летних фестивалей по всему миру.</span>
-          </section>
+          </article>
         </li>
         <li>
-          <section class="news">
-            <span class="category-news">LIFESTYLE FOOD</span>
+          <article class="news">
+            <img src="img/last-post4.jpg" class="news-picture" alt="Наука в кулинарии">
+            <a href="#" class="category-news">LIFESTYLE FOOD</a>
             <h3 class="title-news">НАУКОЕМКИЙ ПОДХОД К КУЛИНАРИИ</h3>
             <time datetime="2019-04-10">Неизвестный автор</time>
-            <img src="img/last-post4.jpg" class="news-picture" alt="Наука в кулинарии">
             <span class="content-news">Узнаем основы проектирования пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.</span>
-          </section>
+          </article>
         </li>
         <li>
-          <section class="news">
-            <span class="category-news">LIFESTYLE INTERIOR ART</span>
+          <article class="news">
+            <img src="img/last-post5.jpg" class="news-picture" alt="Подушки для интерьера">
+            <a href="#" class="category-news">LIFESTYLE INTERIOR ART</a>
             <h3 class="title-news">ДЕЛАЕМ МОДНЫЕ ПРИНТЫ НА ПОДУШКАХ ДЛЯ ИНТЕРЬЕРА</h3>
             <time datetime="2019-06-10">Неизвестный автор</time>
-            <img src="img/last-post5.jpg" class="news-picture" alt="Подушки для интерьера">
             <span class="content-news">Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.</span>
-          </section>
+          </article>
         </li>
       </ol>
     </div>
@@ -126,48 +126,58 @@
 
       <!-- Новые посты -->
       <section class="last-post">
-        <h4>Новые посты</h4>
+        <h3>Новые посты</h3>
         <ul>
           <li>
-            <section class="news">
-              <time datetime="2019-06-10">Неизвестный автор</time>
-              <h3 class="title-news">10 МЕСТ, РАДИ КОТОРЫХ СТОИТ ПРОСНУТЬСЯ НА РАССВЕТЕ</h3>
-              <img src="img/2.jpg" class="news-picture" alt="Питер на рассвете">
-            </section>
+            <a href="#" class="news-link">
+              <article class="news">
+                <img src="img/2.jpg" class="news-picture" alt="Питер на рассвете">
+                <time datetime="2019-06-10">Неизвестный автор</time>
+                <h3 class="title-news">10 МЕСТ, РАДИ КОТОРЫХ СТОИТ ПРОСНУТЬСЯ НА РАССВЕТЕ</h3>
+              </article>
+            </a>
           </li>
           <li>
-            <section class="news">
-              <time datetime="2019-06-10">Неизвестный автор</time>
-              <h3 class="title-news">ЙОГА ДЛЯ НАЧИНАЮЩИХ В ДОМАШНИХ УСЛОВИЯХ</h3>
-              <img src="img/7.jpg" class="news-picture" alt="Йога в домашних условиях">
-            </section>
+            <a href="#" class="news-link">
+              <article class="news">
+                <img src="img/7.jpg" class="news-picture" alt="Йога в домашних условиях">
+                <time datetime="2019-06-10">Неизвестный автор</time>
+                <h3 class="title-news">ЙОГА ДЛЯ НАЧИНАЮЩИХ В ДОМАШНИХ УСЛОВИЯХ</h3>
+              </article>
+            </a>
           </li>
           <li>
-            <section class="news">
-              <time datetime="2019-06-10">Неизвестный автор</time>
-              <h3 class="title-news">ЛУЧШИЕ МУЗЫКАЛЬНЫЕ ФЕСТИВАЛИ ЭТОГО ЛЕТА</h3>
-              <img src="img/45.jpg" class="news-picture" alt="Фестиваль">
-            </section>
+            <a href="#" class="news-link">
+              <article class="news">
+                <img src="img/45.jpg" class="news-picture" alt="Фестиваль">
+                <time datetime="2019-06-10">Неизвестный автор</time>
+                <h3 class="title-news">ЛУЧШИЕ МУЗЫКАЛЬНЫЕ ФЕСТИВАЛИ ЭТОГО ЛЕТА</h3>
+              </article>
+            </a>
           </li>
           <li>
-            <section class="news">
-              <time datetime="2019-04-10">Неизвестный автор</time>
-              <h3 class="title-news">НАУКОЕМКИЙ ПОДХОД К КУЛИНАРИИ</h3>
-              <img src="img/151.jpg" class="news-picture" alt="Наука в кулинарии">
-            </section>
+            <a href="#" class="news-link">
+              <article class="news">
+                <img src="img/151.jpg" class="news-picture" alt="Наука в кулинарии">
+                <time datetime="2019-04-10">Неизвестный автор</time>
+                <h3 class="title-news">НАУКОЕМКИЙ ПОДХОД К КУЛИНАРИИ</h3>
+              </article>
+            </a>
           </li>
           <li>
-            <section class="news">
-              <time datetime="2019-06-10">Неизвестный автор</time>
-              <h3 class="title-news">ДЕЛАЕМ МОДНЫЕ ПРИНТЫ НА ПОДУШКАХ ДЛЯ ИНТЕРЬЕРА</h3>
-              <img src="img/151.jpg" class="news-picture" alt="Подушки для интерьера">
-            </section>
+            <a href="#" class="news-link">
+              <article class="news">
+                <img src="img/151.jpg" class="news-picture" alt="Подушки для интерьера">
+                <time datetime="2019-06-10">Неизвестный автор</time>
+                <h3 class="title-news">ДЕЛАЕМ МОДНЫЕ ПРИНТЫ НА ПОДУШКАХ ДЛЯ ИНТЕРЬЕРА</h3>
+              </article>
+            </a>
           </li>
         </ul>
       </section>
 
       <!-- Поиск -->
-      <section class="search-section">
+      <div class="search-section">
         <form class="search">
           <label class="search-group">
             <input type="text" placeholder="Найти..." required>
@@ -176,20 +186,20 @@
             <img src="svg/search.svg" alt="Поиск">
           </button>
         </form>
-      </section>
+      </div>
 
       <!-- Подписка -->
-      <section>
-        <span class="field-label">Рассылка</span>
+      <div class="subscription">
+        <h3>Рассылка</h3>
         <label class="field-group">
           <input type="email" class="field" placeholder="Ваш email-адрес" required>
         </label>
         <button class="button button-submit" type="submit">Подписаться</button>
-      </section>
+      </div>
 
       <!-- Теги -->
-      <section>
-        <span>Теги</span>
+      <div class="tags">
+        <h3>Теги</h3>
         <div class="tag">
           <a href="#0" class="tag">FASHION</a>
           <a href="#0" class="tag">MUSIC</a>
@@ -200,50 +210,31 @@
           <a href="#0" class="tag">FOOD</a>
           <a href="#0" class="tag">HEALTH</a>
         </div>
-      </section>
+      </div>
 
       <!-- Темы -->
-      <section>
-        <span>Темы</span>
+      <div class="themes">
+        <h3>Темы</h3>
         <ol class="themes-list">
-          <li class="theme-item">
-            Красота
-            <span class="theme-count">12</span>
-          </li>
-          <li class="theme-item">
-            Здоровье
-            <span class="theme-count">4</span>
-          </li>
-          <li class="theme-item">
-            Образ жизни
-            <span class="theme-count">145</span>
-          </li>
-          <li class="theme-item">
-            Музыка
-            <span class="theme-count">28</span>
-          </li>
-          <li class="theme-item">
-            Спорт
-            <span class="theme-count">62</span>
-          </li>
-          <li class="theme-item">
-            Йога
-            <span class="theme-count">8</span>
-          </li>
+          <li class="theme-item">Красота <span class="theme-count">12</span></li>
+          <li class="theme-item">Здоровье <span class="theme-count">4</span></li>
+          <li class="theme-item">Образ жизни <span class="theme-count">145</span></li>
+          <li class="theme-item">Музыка <span class="theme-count">28</span></li>
+          <li class="theme-item">Спорт <span class="theme-count">62</span></li>
+          <li class="theme-item">Йога <span class="theme-count">8</span></li>
         </ol>
-      </section>
-
+      </div>
     </aside>
-  </div>
+  </main>
 
   <!-- Изделия -->
-  <div class="products">
-    <h3>НАШИ ИЗДЕЛИЯ</h3>
+  <section class="products">
+    <h2>НАШИ ИЗДЕЛИЯ</h2>
     <ol>
       <li>
-        <section class="products-item">
-          <h4 class="title-products-item">ПОДУШКА НА ДИВАН</h4>
+        <article class="products-item">
           <img src="img/shop-item-tablet1.jpg" class="products-picture" alt="Подушка на диван">
+          <h3 class="title-products-item">ПОДУШКА НА ДИВАН</h3>
           <span class="content-products-item">Набор из двух подушек с модными принтами. Видео о создании <a href="#">здесь</a>.</span>
           <div class="product-footer">
             <div class="product-prices">
@@ -252,12 +243,12 @@
             </div>
             <button class="product-button" type="button">В магазин</button>
           </div>
-        </section>
+        </article>
       </li>
       <li>
-        <section class="products-item">
-          <h4 class="title-products-item">КУКЛА "ЗАЙЧИК"</h4>
+        <article class="products-item">
           <img src="img/shop-item-tablet2.jpg" class="products-picture" alt='КУКЛА "ЗАЙЧИК"'>
+          <h3 class="title-products-item">КУКЛА "ЗАЙЧИК"</h3>
           <span class="content-products-item">Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена <a href="#">весенняя серия постов</a> в блоге и несколько подкастов.</span>
           <div class="product-footer">
             <div class="product-prices">
@@ -265,12 +256,12 @@
             </div>
             <button class="product-button" type="button">В магазин</button>
           </div>
-        </section>
+        </article>
       </li>
       <li>
-        <section class="products-item">
-          <h4 class="title-products-item">ШЕСТИУГОЛЬНАЯ РАМКА</h4>
+        <article class="products-item">
           <img src="img/shop-item-tablet3.jpg" class="products-picture" alt="ШЕСТИУГОЛЬНАЯ РАМКА">
+          <h3 class="title-products-item">ШЕСТИУГОЛЬНАЯ РАМКА</h3>
           <span class="content-products-item">Необычная рамка для украшения дома из видео <a href="#">"Как сделать рамку из подручных средств за 30 мин"</a>.</span>
           <div class="product-footer">
             <div class="product-prices">
@@ -279,18 +270,18 @@
             </div>
             <button class="product-button" type="button">В магазин</button>
           </div>
-        </section>
+        </article>
       </li>
     </ol>
-  </div>
+  </section>
 
   <!-- Подвал -->
   <footer class="footer">
-    <section class="social">
+    <div class="social">
       <img src="svg/001-dribbble.svg" alt="Dribbble">
       <img src="svg/002-pinterest.svg" alt="Pinterest">
       <img src="svg/003-tumblr.svg" alt="Tumblr">
-    </section>
+    </div>
     <div class="copyright">
       <span>Copyright © 2009–2019 City Blog LLC.</span>
     </div>
