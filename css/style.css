@@ -548,7 +548,8 @@ a {
   display: flex;
   flex-direction: column;
   align-self: stretch;
-  width: calc(50% - 10px);
+  width: 100%;
+  max-width: 340px;
   box-sizing: border-box;
 }
 .product-picture {
