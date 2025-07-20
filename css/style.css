@@ -604,15 +604,14 @@ a {
   height: 50px;
   border-style: none;
   background-color: #b59f5b;
-}
-.to-shop > a {
-  font-family: open-sans-b, sans-serif;
+  font-family: 'open-sans-b', sans-serif;
   font-weight: bold;
   font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
+  cursor: pointer;
 }
 
 /* Подвал */
@@ -785,7 +784,7 @@ a {
   border: 0;
   padding: 15px 20px;
   font-family: inherit;
-  background-origin: none;
+  background-origin: content-box;
 }
 textarea:hover,
 textarea:focus {
