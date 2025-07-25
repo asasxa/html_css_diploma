@@ -676,8 +676,7 @@ a {
 }
 
 /* Всплывающее окно */
-._hidden,
-.popup-hidden {
+._hidden {
   visibility: hidden;
 }
 
